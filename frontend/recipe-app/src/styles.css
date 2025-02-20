@@ -1,3 +1,176 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  padding: 1rem 2rem;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.landing-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero {
+  background: url('https://source.unsplash.com/1600x900/?food') center/cover no-repeat;
+  color:#FF6600;
+  padding: 0px 20px;
+  border-radius: 10px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Search Bar */
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-container button {
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #e65c00;
+  
+}
+
+/* CTA Buttons */
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #ff6600;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #e65c00;
+}
+
+.btn-secondary {
+  background: white;
+  color: #ff6600;
+  border: 2px solid #ff6600;
+}
+
+.btn-secondary:hover {
+  background: #ff6600;
+  color: white;
+}
+
+/* Featured Recipes */
+.featured-recipes {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.recipe-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 250px;
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+}
+
+.recipe-card h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .search-container input {
+    width: 250px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,13 +181,13 @@ body {
   .navbar {
     display: flex;
     justify-content: space-between;
-    background: #007bff;
+    background:#FFE5B4;
     padding: 1rem;
-    color: white;
+    color:#222;
   }
   
   .navbar a {
-    color: white;
+    color: #222;
     margin: 0 10px;
     text-decoration: none;
   }
@@ -35,7 +208,18 @@ body {
     border-radius: 5px;
   }
   
+
+
+
+  
 /*Signup*/
+
+@media (max-width: 450px) {
+  .form-container {
+      width: 90%;
+  }
+}
+
   .required {
     color: red;
     margin-left: 5px;
@@ -58,6 +242,11 @@ body {
   margin: 50px auto;
   text-align: center;
 }
+
+.form-container, .form-container input {
+  box-sizing: border-box;
+}
+
 
 /* Form Title */
 .form-container h2 {
