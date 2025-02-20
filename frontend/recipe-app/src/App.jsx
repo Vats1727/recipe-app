@@ -12,7 +12,7 @@ function App() {
       <div className="container">
         {/* Navbar */}
         <nav className="navbar">
-          <h1>Recipe App</h1>
+          <h1>Bite Buddy</h1>
           <div>
             <Link to="/">Home</Link>
             <Link to="/signup">Signup</Link>
