@@ -10,17 +10,24 @@ import UserForm from "./components/UserForm";
 function App() {
   return (
     <Router>
-      <div className="container">
-        {/* Navbar */}
-        <nav className="navbar">
+    <div className="container">
+      {/* Navbar */}
+      <nav className="navbar">
+        <div className="nav-left">
           <h1>Bite Buddy</h1>
-          <div>
+          <div className="menu">
             <Link to="/">Home</Link>
             <Link to="/signup">Signup</Link>
             <Link to="/login">Login</Link>
             <Link to="/form">User Form</Link>
           </div>
-        </nav>
+          
+        </div>
+        <div className="search-container">
+          <input type="text" placeholder="Search for recipes..." />
+          <button>Search</button>
+        </div>
+      </nav>
 
         {/* Routes */}
         <Routes>
@@ -48,10 +55,7 @@ const LandingPage = () => (
         <div className="hero-content">
           <h1>Welcome to Bite Buddy</h1>
           <p>Discover, share, and enjoy delicious recipes tailored to your taste!</p>
-          <div className="search-container">
-            <input type="text" placeholder="Search for recipes..." />
-            <button>Search</button>
-          </div>
+
           <div className="cta-buttons">
             <Link to="/signup" className="btn-primary">Get Started</Link>
             <Link to="#" className="btn-secondary">Explore Recipes</Link>
@@ -81,5 +85,5 @@ const LandingPage = () => (
   </motion.div>
 );
 
-// export default LandingPage;
+// export default LandingPage; harsh
 export default App;
