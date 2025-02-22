@@ -1,5 +1,3 @@
-
-
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -87,5 +85,5 @@ const LandingPage = () => (
   </motion.div>
 );
 
-// export default LandingPage; harsh
+// export default LandingPage;
 export default App;
