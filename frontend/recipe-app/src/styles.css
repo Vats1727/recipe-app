@@ -7,26 +7,58 @@ body {
 }
 
 /* Navbar */
+
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background: #007bff;
+  justify-content: space-between;
+  background: #ffebcd; /* Light beige */
   padding: 1rem 2rem;
-  color: white;
+  width: 100%;
 }
 
-.navbar a {
-  color: white;
-  margin: 0 15px;
-  text-decoration: none;
+.logo {
+  font-size: 1.5rem;
   font-weight: bold;
-  transition: 0.3s;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+.nav-links {
+  display: flex;
+  gap: 20px;
 }
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  max-width: 25%;
+}
+
+.search-container input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  background: orange;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+
 
 /* Hero Section */
 .landing-container {
