@@ -41,9 +41,21 @@ function App() {
           <Route path="/form" element={<UserForm />} />
           <Route path="/add-recipe" element={<AddRecipe />} /> {/* New Route */}
         </Routes>
-        
+
+   {/* Most Viewed & Favorite Section */}
+        <section className="categories-section" style={{ textAlign: "center", padding: "4rem 0" }}>
+          <h2 style={{ marginBottom: "2rem" }}>Most Viewed Categories</h2>
+          <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px", marginBottom: "3rem" }}> 
+            <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
+          </div>
+          <h2 style={{ marginBottom: "2rem" }}>Favorite Page</h2>
+          <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px" }}> 
+            <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
+          </div>
+        </section>
+
         {/* Footer */}
-        <footer className="footer" style={{ backgroundColor: "#FFE5B4", textAlign: "center", padding: "1rem", marginTop: "20px" }}>
+        <footer className="footer" style={{ backgroundColor: "#FFE5B4", textAlign: "center", padding: "1rem", marginTop: "auto" }}>
           <p>&copy; {new Date().getFullYear()} Bite Buddy. All rights reserved.</p>
         </footer>
       </div>
