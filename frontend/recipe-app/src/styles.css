@@ -359,3 +359,44 @@ body {
   color: green;
   font-weight: bold;
 }
+
+/* Add Recipe Form Styling */
+.add-recipe-container {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.add-recipe-container h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
