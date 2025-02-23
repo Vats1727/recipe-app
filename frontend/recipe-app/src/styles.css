@@ -6,64 +6,85 @@ body {
   background-color: #f8f9fa;
 }
 
-/* Navbar */
 
+/* logo size */
+h1.size {
+  font-size: 30px;
+}
+/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: #ffebcd; /* Light beige */
   padding: 1rem 2rem;
-  width: 100%;
+}
+
+/* Left Section - Logo */
+.logo-section {
+  flex: 1;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
-.nav-links {
+/* Center Section - Menu */
+.menu-section {
+  flex: 2; /* Center it properly */
   display: flex;
-  gap: 20px;
+  justify-content: center;
 }
 
-.nav-links a {
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu a {
   text-decoration: none;
   color: black;
   font-weight: bold;
+}
+
+/* Right Section - Search Bar */
+.search-section {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .search-container {
   display: flex;
   align-items: center;
   gap: 10px;
-  flex-grow: 1;
-  max-width: 25%;
+  max-width: 250px;
 }
 
 .search-container input {
-  flex: 1;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 100%;
 }
 
 .search-container button {
   background: orange;
   color: white;
   border: none;
-  padding: 8px 20px;
+  padding: 8px 15px;
   border-radius: 5px;
   cursor: pointer;
-  margin-right: 25px;
 }
+
 
 
 
 /* Hero Section */
 .landing-container {
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
 }
 
 .hero {
@@ -234,12 +255,12 @@ body {
   }
   
   input, select, button {
-    width: 100%;
     padding: 10px;
     margin-top: 10px;
     border-radius: 5px;
   }
   
+
 
 
 

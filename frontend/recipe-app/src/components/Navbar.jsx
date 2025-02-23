@@ -1,7 +1,4 @@
 import { Link } from "react-router-dom";
-
-//hello 
-
 const Navbar = () => (
   <nav className="navbar">
     <h1 className="logo">Recipe App</h1>
