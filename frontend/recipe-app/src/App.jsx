@@ -75,6 +75,7 @@ const HomePage = () => (
   </>
 );
 
+
 // Landing Page Component
 const LandingPage = () => (
   <motion.div 
