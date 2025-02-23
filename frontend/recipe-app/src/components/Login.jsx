@@ -25,27 +25,29 @@ const Login = () => {
   };
 
   return (
-    <div className="form-container">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <label>Email Address <span className="required">*</span></label>
-        <input
-          type="email"
-          value={formData.email}
-          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-        />
-        {errors.email && <p className="error">{errors.email}</p>}
+    <div className="login-page">
+      <div className="form-container">
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <label>Email Address <span className="required">*</span></label>
+          <input
+            type="email"
+            value={formData.email}
+            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          />
+          {errors.email && <p className="error">{errors.email}</p>}
 
-        <label>Password <span className="required">*</span></label>
-        <input
-          type="password"
-          value={formData.password}
-          onChange={(e) => setFormData({ ...formData, password: e.target.value })}
-        />
-        {errors.password && <p className="error">{errors.password}</p>}
+          <label>Password <span className="required">*</span></label>
+          <input
+            type="password"
+            value={formData.password}
+            onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+          />
+          {errors.password && <p className="error">{errors.password}</p>}
 
-        <button type="submit">Login</button>
-      </form>
+          <button type="submit">Login</button>
+        </form>
+      </div>
     </div>
   );
 };

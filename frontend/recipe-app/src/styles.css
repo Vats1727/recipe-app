@@ -421,3 +421,23 @@ button {
   cursor: pointer;
   margin-top: 10px;
 }
+
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;  /* Ensures page takes up enough space */
+}
+
+.form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 300px;
+}
+
+.footer {
+  margin-top: auto; /* Ensures footer stays at bottom */
+}

@@ -33,29 +33,19 @@ function App() {
           </div>
         </nav>
 
-        {/* Routes */}
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/form" element={<UserForm />} />
-          <Route path="/add-recipe" element={<AddRecipe />} /> {/* New Route */}
-        </Routes>
+        <div style={{ flex: 1 }}>
+          {/* Routes */}
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/form" element={<UserForm />} />
+            <Route path="/add-recipe" element={<AddRecipe />} /> {/* New Route */}
+          </Routes>
+        </div>
 
-   {/* Most Viewed & Favorite Section */}
-        <section className="categories-section" style={{ textAlign: "center", padding: "4rem 0" }}>
-          <h2 style={{ marginBottom: "2rem" }}>Most Viewed Categories</h2>
-          <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px", marginBottom: "3rem" }}> 
-            <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
-          </div>
-          <h2 style={{ marginBottom: "2rem" }}>Favorite Page</h2>
-          <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px" }}> 
-            <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
-          </div>
-        </section>
-
-        {/* Footer */}
-        <footer className="footer" style={{ backgroundColor: "#FFE5B4", textAlign: "center", padding: "1rem", marginTop: "auto" }}>
+         {/* Footer */}
+         <footer className="footer" style={{ backgroundColor: "#FFE5B4", textAlign: "center", padding: "1rem", marginTop: "auto" }}>
           <p>&copy; {new Date().getFullYear()} Bite Buddy. All rights reserved.</p>
         </footer>
       </div>
@@ -63,11 +53,33 @@ function App() {
   );
 }
 
+
+   // Home Page Component (Includes Most Viewed & Favorite Section)
+const HomePage = () => (
+  <>
+    <LandingPage />
+    <section className="categories-section" style={{ textAlign: "center", padding: "4rem 0" }}>
+      <h2 style={{ marginBottom: "2rem" }}>Most Viewed Categories</h2>
+      <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px", marginBottom: "3rem" }}> 
+        <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
+      </div>
+      <h2 style={{ marginBottom: "2rem" }}>Seasonal Recipe</h2>
+      <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px", marginBottom: "3rem" }}> 
+        <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
+      </div>
+      <h2 style={{ marginBottom: "2rem" }}>Favorite Page</h2>
+      <div className="recipe-placeholder" style={{ height: "200px", background: "#f3f3f3", borderRadius: "10px" }}> 
+        <p style={{ lineHeight: "200px", color: "#888" }}>Recipe Blog Section</p>
+      </div>
+    </section>
+  </>
+);
+
 // Landing Page Component
 const LandingPage = () => (
   <motion.div 
     className="landing-container"
-    style={{ backgroundImage: "url('/b.png')", backgroundSize: "cover", backgroundPosition: "center" }}
+    style={{ backgroundImage: "url('/b new.png')", backgroundSize: "cover", backgroundPosition: "center" }}
     initial={{ opacity: 0 }} 
     animate={{ opacity: 1 }} 
     transition={{ duration: 1 }}
